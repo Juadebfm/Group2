@@ -121,3 +121,126 @@ header .hero h1 {
   line-height: 1.8;
 }
 /* LEADER SECTION */
+/* GRID SECTION */
+.grid {
+  padding: var(--container-pd2);
+}
+
+.grid .gridTopic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}
+
+.grid .gridTopic h3 {
+  line-height: 1;
+  color: var(--theme-black);
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.grid .gridTopic button {
+  border: 1px solid var(--theme-black);
+  background-color: transparent;
+  padding: 0.5rem 2.5rem;
+}
+
+.mainGrid_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.mainGrid_img .img {
+  position: relative;
+}
+
+.mainGrid_img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease-in;
+}
+
+.mainGrid_img img:hover {
+  filter: grayscale(100%) contrast(20%);
+  cursor: pointer;
+}
+
+.mainGrid_img .img span {
+  position: absolute;
+  z-index: 1;
+  top: 86%;
+  right: 0%;
+  padding-left: 25px;
+  width: 100%;
+  height: auto;
+  color: var(--theme-white);
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px var(--theme-black);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* GRID SECTION */
+
+/* FOOTER SECTION */
+footer {
+  color: var(--theme-white);
+  background-color: var(--theme-black);
+  padding: 2rem 5rem 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo span {
+  font-weight: 800;
+  font-size: 28px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+footer span:hover {
+  color: var(--theme-white-faded);
+}
+
+footer ul {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer ul li {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+  color: var(--theme-white-faded);
+}
+
+footer .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+footer .socials .socialIcons i {
+  font-size: 25px;
+}
+
+footer .socials span {
+  color: var(--theme-dark-gray);
+  margin-top: 1.8rem;
+  font-size: 13px;
+}
+/* FOOTER SECTION */
